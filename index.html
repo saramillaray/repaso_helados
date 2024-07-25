@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--REPASANDO HTML-->
+<html>
+    
+    <head>
+<!--ESTA LINEA ES PARA EL NAVEGADOR-->
+        <title> Tienda de helados de crema</title>
+        <meta charset="UTF-8">  <!--para los tildes-->
+        <style>
+
+                header { 
+                   background-color: rgb(168, 236, 42) ; /*AGREGANDO ESTILOS*/ /*COLOR DE FONDO*/
+                   color: brown; /*COLOR DE LETRA*/
+                   text-align: center;/*SE CENTRA EL TEXTO*/
+                   padding-top: 30px; /*ESPACIADO SUPERIOR*/
+                   padding-bottom: 30px;  /*ESPACIADO INFERIOR*/
+                }
+
+                main {
+
+                    padding: 20px;
+                    margin: 20px;
+                    background-color: white;
+                    box-shadow: 4px 4px 8px rgba(33, 33, 33, 1);   /*para dar sombra */
+
+                }
+
+                body{
+
+                    background-color: rgb(236, 232, 232);
+
+
+                }
+
+                nav{
+                    background:rgb(223, 114, 114) ;
+
+                    display: flex; /*organiza los elementos del menu, sin justify content quedarian a la izq, con queda centrado*/
+                    justify-content: center; 
+
+                }
+                
+                nav a{
+
+                    color: white;
+                    padding: 5px;
+                    text-align: center;
+
+                }
+        </style>
+    </head>
+
+        <body>
+        <!--ESTA LINEA ES PARA EL USUARIO-->
+
+            <header>
+                <h1>HELADOS DE CREMA</h1>
+
+
+            </header>
+
+            <nav>
+
+                <a href="#inicio"> Inicio</a>
+                <a href="#acerca"> Acerca de</a>
+                <a href="#servicios"> Servicios</a>
+                <a href="#contacto"> Contacto</a>
+
+            </nav>
+            <main>
+                <H2>ACERCA DE NOSOTROS</H2>  <!--SUBTITULO--> <!--atributo es el texto q se muestra si la imagen no carga-->
+                
+                <img width="300" alt = "helado de 'crema' " src="https://cdn-icons-png.flaticon.com/512/5976/5976353.png " />
+                <p> Somos una empresa dedicada a ofrecer los mejores servicios en desarrollo web. Nuestro equipo está comprometido
+                    con la calidad y la satisfacción del cliente. </p>
+                 <h3> Nuestros Servicios </h3>   
+                 <p>Ofrecemos una amplia gama de servicios, incluyendo diseño web, desarrollo de aplicaciones, y soluciones de
+                    marketing digital. Estamos aquí para ayudarte a alcanzar tus objetivos.</p>
+                 <h2>Contáctanos</h2> 
+                 <p>Si tienes alguna pregunta o necesitas más información, no dudes en <a href="#">contactarnos</a>. Estamos aquí
+                    para ayudarte. </p>  
+            </main>
+        <footer style="background: #333; color: white; text-align: center; padding: 10px;"> <!--no es la mejor opcion el style acá-->
+            <p>&copy; 2024 helados RicoRico. Todos los derechos reservados</p>
+        </footer>
+        </body>
+
+
+</html>
