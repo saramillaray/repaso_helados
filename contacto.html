@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body{
+
+                font-family: Arial, Helvetica, sans-serif; /*fuente de toda la pagina*/
+                font-size: 12px; /*tamaño de letra*/
+            }
+            input[type="text"], input[type="email"], select{
+
+                background: white; /*fondo blamnco*/
+                height: 30px;  /*altura*/
+                border-radius: 6px; /*borde redondeado*/
+                border: 1px  solid #d80b0b; /*borde gris*/
+                margin-bottom: 15px; /*separa la cajita para darle margen inferior o espacio a todas las cajitas*/
+
+            }
+
+            
+
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+
+            label{
+
+
+                font-weight: bold; /*negrita*/
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        <form >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id= "nombre" placeholder="Ingrese su nombre" />
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" placeholder="Ingrese sus Apellidos" />
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Ingrese su email" />
+
+            <label for="servicio">Seleccione servicio:</label>
+            <select id="servicio" multiple style="height: 50px;"> <!--sobre escribe el pixel q le dimos arriba-->
+                <option value="1">Preparado de helados de chocolate</option>
+                <option value="2">Preparado de helados de vainilla</option>
+                <option value="3">Preparado de helados de higo</option>
+
+            </select>
+
+            <label for="mensajes">Extras para su servicio</label>
+            <textarea  id="mensajes"></textarea>
+
+            <label></label> pago al contado <input type="radio" value="CONT" name="TIPO_PAGO"></label>
+            <label></label> pago al contado <input type="radio" value="TAR" name="TIPO_PAGO"></label>
+        </form>
+
+
+
+    </body>
+
+</html>
